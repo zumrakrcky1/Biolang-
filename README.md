@@ -2,91 +2,78 @@
 Python temelli biyoinformatik dili: genetik analiz, hastalık tahmini, sağlık verisi işleme.
 
 
-🧬 Biolang - Python Tabanlı Sağlık ve Genetik Odaklı Programlama Dili
-📌 Tanıtım
-Biolang, genetik mühendisliği, biyoinformatik ve biyomedikal analizler için özel olarak geliştirilmiş Python tabanlı bir programlama dilidir. Sağlık alanındaki bilim insanlarına ve yazılımcılara genetik veriler üzerinde analiz yapma, hastalık teşhisi koyma ve sağlık risklerini değerlendirme konularında kullanıcı dostu bir dil ve hazır fonksiyonlar sunar.
+# 🧬 Biolang - Python Tabanlı Sağlık ve Genetik Odaklı Programlama Dili
 
-Bu proje, Python'un esnek yapısını biyoloji temelli özel fonksiyonlarla genişleterek yeni bir niş programlama dili oluşturmayı amaçlamıştır.
+## 🔖 Tanıtım
 
-🚀 Özellikler
-🧪 Hastalık Tahminleme ve Risk Analizi: Kalp hastalıkları, diyabet, kanser ve X-kromozomu hastalıklarına yönelik risk tahminleri.
+**Biolang**, genetik mühendisliği, biyoinformatik ve biyomedikal analizler için özel olarak geliştirilmiş Python tabanlı bir programlama dilidir. Bu dil, sağlık alanındaki bilim insanlarına ve geliştiricilere, genetik veriler üzerinde analiz yapma, hastalık tahmini ve risk hesaplama gibi konularda kullanım kolaylığı sunar.
 
-🧬 Genetik Fonksiyonlar: DNA replikasyonu, mRNA transkripsiyonu, protein sentezi, mutasyon tespiti, fenotip tahmini.
+## 🚀 Öne Çıkan Özellikler
 
-🧠 Farmakogenetik Modül: Genotip ve ilaç etkileşimlerine göre yan etki riski değerlendirmesi.
+- 🧪 **Hastalık Tahmini**: Kalp hastalığı, diyabet, kanser, X-kromozomu kaynaklı hastalıklar
+- 🧬 **Genetik Fonksiyonlar**: DNA replikasyonu, mRNA transkripsiyonu, protein sentezi, mutasyon tespiti
+- 🧰 **Farmakogenetik Analiz**: Genotip-ilac uyumu ve yan etki risk hesaplama
+- 📃 **Veri Kaydetme/Yükleme**: JSON, CSV, Excel, SQLite
+- 🔍 **Motif Arama**: DNA dizilerinde belirli örüntülerin tespiti
 
-🩸 Kan Grubu ve Rh Faktörü Tahmini: Anne-baba verisine göre çocuk olasılıklarının hesaplanması.
+## 📊 Kullanım Örnekleri
 
-📂 Veri Kaydetme ve Yükleme: JSON, CSV, Excel ve SQLite veri kaynaklarıyla tam uyum.
+| Fonksiyon                               | Amaç                                           |
+| --------------------------------------- | ---------------------------------------------- |
+| `dna_rep("ATCG")`                       | DNA'nın tamamlayıcı dizisini üretir            |
+| `med_side_effect_risk("*1", "CYP2D6")`  | Genotip-ilaç uyumuna göre yan etki riski verir |
+| `glucose_level_analysis(145, "tokluk")` | Kan şekeri analiz eder                         |
+| `calc_cancer_risk(True, True)`          | Meme kanseri riskini hesaplar                  |
+| `load_data_from_excel("veri.xlsx")`     | Excel dosyasından veri çeker                   |
+| `mrna_to_protein("AUGUUU")`             | mRNA'yı aminoasit dizisine dönüştürür          |
 
-🔍 Veri Arama ve Analiz: DNA dizilerinde motif arama, genetik desen inceleme.
+## 🔧 Kurulum
 
-📚 Kullanılan Fonksiyonlardan Örnekler
-Fonksiyon	Açıklama
-dna_rep(dna_seq)	DNA'nın tamamlayıcı dizisini üretir.
-med_side_effect_risk(genotype, drug)	Genotip-ilaç uyumuna göre yan etki riski tahmini yapar.
-glucose_level_analysis(level, state)	Açlık/tokluk durumuna göre kan şekeri analiz eder.
-calculate_cf_risk(parents)	Kistik fibrozis gibi hastalıklarda taşıyıcılık ve risk analizi yapar.
-calc_cancer_risk(BRCA_status, family_history)	Meme kanseri riski hesaplar.
-load_data_from_excel(file)	Excel dosyasından veri çeker ve işler.
-mrna_to_protein(mrna_seq)	mRNA'dan aminoasit dizilimi üretir.
-
-💡 Neden Biolang?
-✅ Doğal dil benzeri anlaşılır syntax
-✅ Tıp ve genetik odaklı yerleşik fonksiyonlar
-✅ Kodlama bilgisi az olan sağlık profesyonelleri için bile erişilebilir yapı
-✅ Etik ilkelerle geliştirilmiş: veri gizliliği, şeffaflık, güvenlik
-
-🔧 Kurulum
-bash
-Kopyala
-Düzenle
+```bash
 git clone https://github.com/kullanici-adi/biolang.git
 cd biolang
 pip install -r requirements.txt
-Kütüphaneler (örnek):
+```
 
-text
-Kopyala
-Düzenle
+## 🔹 Gerekli Kütüphaneler
+
+```text
 pandas
 numpy
 openpyxl
 requests
-📂 Dosya Yapısı (örnek)
-bash
-Kopyala
-Düzenle
+```
+
+## 📁 Proje Yapısı (ornek)
+
+```
 biolang/
-├── core/                  # Temel fonksiyonlar (genetik, risk analizleri vb.)
+├── core/                  # Genetik analiz fonksiyonları
+├── utils/                 # Yardımcı işlevler (veri yükleme vb.)
+├── tests/                 # Testler
 ├── data/                  # Örnek veri setleri
-├── utils/                 # Yardımcı işlevler (veri yükleme/kaydetme)
-├── tests/                 # Test dosyaları
-├── README.md              # Bu dosya
+├── README.md              # Tanıtım dosyası (bu dosya)
 └── requirements.txt
-🔐 Etik İlkeler
-Gizlilik: Genetik veriler kullanıcı izni olmadan kullanılmaz.
+```
 
-Şeffaflık: Çıktılar yalnızca tahmin olarak sunulur, tıbbi karar destek sistemi değildir.
+## 🔒 Etik İlkeler
 
-Erişim Adaleti: Açık kaynak kodludur, herkesin kullanımına açıktır.
+- **Veri Gizliliği**: Genetik veriler şifreli ve sadece yetkili kişilerce erişilebilir.
+- **Açıklık**: Sonuçlar tübbi karar değildir; destek aracıdır.
+- **Adil Erişim**: Öğrenci ve araştırmacılar için açık kaynaklı ve erişilebilirdir.
 
-📈 Gelecek Planları
-Makine öğrenmesi algoritmalarının entegrasyonu
+## 📈 Gelecek Planlar
 
-Görsel analiz modüllerinin (heatmap, risk dağılımı vs.) eklenmesi
+- Makine öğrenmesi entegrasyonu
+- Web tabanlı arayüz
+- Veri görselleştirme modülü
 
-Web tabanlı bir arayüzle doktorlar için kullanılabilir hale getirilmesi
+## 👩‍💻 Geliştirici Ekip
 
-🤝 Katkı Sağlayın
-Projeye katkı sağlamak isteyenler için:
-
-Fork'layın 🍴
-
-Geliştirin 🛠
-
-Pull request gönderin 📬
-
-👨‍🔬 Geliştirici Ekibi
-Bu proje 6 kişilik bir ekip tarafından geliştirilmiştir:
 Sevda Sağlamtaş, Eylül Naz Çelik, Zeynep Karataş, Defne Çiftçi, Rana Sabiha Çevik, Sena Zeynep Görgün, Sude Başalan, Berfin Zümra Karacakaya
+
+## 📝 Lisans
+
+MIT lisansı altındadır. Akademik ve eğitimsel kullanıma açıktır.
+
+
