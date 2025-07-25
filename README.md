@@ -72,8 +72,7 @@ biolang/
 
 Sevda Sağlamtaş, Eylül Naz Çelik, Zeynep Karataş, Defne Çiftçi, Rana Sabiha Çevik, Sena Zeynep Görgün, Sude Başalan, Berfin Zümra Karacakaya
 
-## 📝 Lisans
 
-MIT lisansı altındadır. Akademik ve eğitimsel kullanıma açıktır.
+
 
 
